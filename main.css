@@ -14,9 +14,7 @@ body {
   grid-template-columns: repeat(6, 100px);
 }
 
-.item {
-  border: 1px solid black;
-}
+
 
 .square {
   background-color: rgb(151, 165, 255);
