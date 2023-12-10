@@ -12,19 +12,90 @@ body {
   width: 600px;
   grid-template-rows: repeat(5, 100px);
   grid-template-columns: repeat(6, 100px);
+  grid-template-areas:
+    "a1 a2 a3 a4 a5 a6"
+    "b1 b2 b3 b4 b5 b6"
+    "c1 c2 c3 c4 c5 c6"
+    "d1 d2 d3 d4 d5 d6"
+    "e1 e2 e3 e4 e5 e6";
+
 }
 
 .brick {
   padding: 0;
   border-radius: 10px;
+  background-color: blueviolet;
+  display: inline;
+}
+
+.square,
+.rectangle {
+  grid-area: auto;
+  background-color: whitesmoke;
+}
+
+.square-1 {
+  grid-area: auto;
+}
+
+.square-2 {
+  grid-area: auto;
+}
+
+.square-3 {
+  grid-area: auto;
+}
+
+.square-4 {
+  grid-area: auto;
+}
+
+.square-5 {
+  grid-area: auto;
+}
+
+.square-6 {
+  grid-area: auto;
+}
+
+.square-7 {
+  grid-area: auto;
+}
+
+.rectangle-1 {
+  grid-area: auto;
+}
+
+.rectangle-2 {
+  grid-area: auto;
+}
+
+.rectangle-3 {
+  grid-area: auto;
+}
+
+.rectangle-4 {
+  grid-area: auto;
+}
+
+.rectangle-5 {
+  grid-area: auto;
+}
+
+.rectangle-6 {
+  grid-area: auto;
+}
+
+.rectangle-7 {
+  grid-area: auto;
 }
 
 .square {
-  background-color: red;
+  grid-area: auto;
 }
 
 .rectangle {
-  background-color: blue;
+  grid-area: auto;
 }
 
 .vertical {
@@ -33,4 +104,127 @@ body {
 
 .horizontal {
   grid-column: span 2;
+}
+
+
+
+
+[at="a1"] {
+  grid-area: a1;
+}
+
+[at="a2"] {
+  grid-area: a2;
+}
+
+[at="a3"] {
+  grid-area: a3;
+}
+
+[at="a4"] {
+  grid-area: a4;
+}
+
+[at="a5"] {
+  grid-area: a5;
+}
+
+[at="a6"] {
+  grid-area: a6;
+}
+
+[at="b1"] {
+  grid-area: b1;
+}
+
+[at="b2"] {
+  grid-area: b2;
+}
+
+[at="b3"] {
+  grid-area: b3;
+}
+
+[at="b4"] {
+  grid-area: b4;
+}
+
+[at="b5"] {
+  grid-area: b5;
+}
+
+[at="b6"] {
+  grid-area: b6;
+}
+
+[at="c1"] {
+  grid-area: c1;
+}
+
+[at="c2"] {
+  grid-area: c2;
+}
+
+[at="c3"] {
+  grid-area: c3;
+}
+
+[at="c4"] {
+  grid-area: c4;
+}
+
+[at="c5"] {
+  grid-area: c5;
+}
+
+[at="c6"] {
+  grid-area: c6;
+}
+
+[at="d1"] {
+  grid-area: d1;
+}
+
+[at="d2"] {
+  grid-area: d2;
+}
+
+[at="d3"] {
+  grid-area: d3;
+}
+
+[at="d4"] {
+  grid-area: d4;
+}
+
+[at="d5"] {
+  grid-area: d5;
+}
+
+[at="d6"] {
+  grid-area: d6;
+}
+
+[at="e1"] {
+  grid-area: e1;
+}
+
+[at="e2"] {
+  grid-area: e2;
+}
+
+[at="e3"] {
+  grid-area: e3;
+}
+
+[at="e4"] {
+  grid-area: e4;
+}
+
+[at="e5"] {
+  grid-area: e5;
+}
+
+[at="e6"] {
+  grid-area: e6;
 }

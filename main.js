@@ -2,7 +2,7 @@ function randomColor() {
   let r = Math.floor(Math.random() * 250);
   let g = Math.floor(Math.random() * 250);
   let b = Math.floor(Math.random() * 250);
-  if (r <= 230 && g <= 230 && b <= 230) {
+  if (r <= 243 && g <= 243 && b <= 243) {
     return `rgb(${r}, ${g}, ${b})`;
   }
 }
@@ -220,8 +220,7 @@ function onMouseClick() {
 // function clickedColumn(col) {
 //   (col) => col.style.gridColumn;
 //   return col;
-// }
+// },
 // function clickedRow(row) {
 //   (row) => row.style.gridColumn;
 //   return row;
-//   }
