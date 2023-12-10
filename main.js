@@ -1,9 +1,81 @@
 function randomColor() {
-  let r = Math.floor(Math.random() * 255);
-  let g = Math.floor(Math.random() * 255);
-  let b = Math.floor(Math.random() * 255);
+  let r = Math.floor(Math.random() * 250);
+  let g = Math.floor(Math.random() * 250);
+  let b = Math.floor(Math.random() * 250);
 
-  return `rgb(${r}, ${g}, ${b})`; // at least this is working
+  return `rgb(${r}, ${g}, ${b})`;
+}
+function onMouseClick() {
+  document
+    .getElementById("sq-1")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-2")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-3")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-4")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-5")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-6")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("sq-7")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-1")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-2")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-3")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-4")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-5")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-6")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
+  document
+    .getElementById("rec-7")
+    .addEventListener("click", function onClick(event) {
+      event.target.style.backgroundColor = randomColor();
+    });
 }
 
 // //let squareBrick = document.getElementsByClassName(".square"); // no diff
@@ -11,26 +83,85 @@ function randomColor() {
 // let vertiBrick = document.getElementsByClassName(".vertical");
 // let horiBrick = document.getElementsByClassName(".horizontal");
 // let changeColor = randomColor();
-function onMouseClick() {
-  let Brick = document.getElementById();
-  Brick.style.backgroundColor = randomColor();
-}
+//
+// let allBricks = document.getElementsByTagName("button");
+// let allBrickId = new Array(allBricks.length);
+// let brickIds = new Array(allBricks.length);
+// function getBrickId() {
+//   for (let i = 0; i < allBricks.length; i++) {
+//     let ele = allBricks[i];
+//     allBrickId.push(ele.id);
+//   }
+//   console.log(allBrickId);
+//   return allBrickId;
+// }
+
+// function onMouseClick() {
+//   switch (allBrickId) {
+//     case "sq-1":
+//       let square = document.getElementById("sq-1");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-2":
+//       square = document.getElementById("sq-2");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-3":
+//       square = document.getElementById("sq-3");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-4":
+//       square = document.getElementById("sq-4");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-5":
+//       square = document.getElementById("sq-5");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-6":
+//       square = document.getElementById("sq-6");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+//     case "sq-7":
+//       square = document.getElementById("sq-7");
+//       square.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = randomColor();
+//       });
+//       break;
+
+//     default:
+//       whiteSpace = document.getElementById("0");
+//       whiteSpace.addEventListener("click", function onClick(event) {
+//         event.target.style.backgroundColor = "white";
+//       });
+//       break;
+//   }
+// }
 
 // function onMouseClick() {
 //  let squareBrick = document.getElementById("sq-1");
 //  squareBrick.style.backgroundColor = randomColor();
-//
 // }
 // function onMouseClick() {
 //   let squareBrick = document.getElementById("sq-2");
 //   squareBrick.style.backgroundColor = randomColor();
 // }
-
 // function onMouseClick() {
 //   let squareBrick = document.getElementById("sq-3");
 //   squareBrick.style.backgroundColor = randomColor();
 // }
-
 // function onMouseClick() {
 //   let squareBrick = document.getElementById("sq-4");
 //   squareBrick.style.backgroundColor = randomColor();
