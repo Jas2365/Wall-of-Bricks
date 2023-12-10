@@ -14,14 +14,17 @@ body {
   grid-template-columns: repeat(6, 100px);
 }
 
-
+.brick {
+  padding: 0;
+  border-radius: 10px;
+}
 
 .square {
-  background-color: rgb(151, 165, 255);
+  background-color: red;
 }
 
 .rectangle {
-  background-color: rgb(156, 29, 29);
+  background-color: blue;
 }
 
 .vertical {
