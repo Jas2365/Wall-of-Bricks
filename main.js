@@ -2,7 +2,7 @@ function randomColor() {
   let r = Math.floor(Math.random() * 250);
   let g = Math.floor(Math.random() * 250);
   let b = Math.floor(Math.random() * 250);
-  if (r >= 30 && g >= 30 && b >= 30) {
+  if (r <= 230 && g <= 230 && b <= 230) {
     return `rgb(${r}, ${g}, ${b})`;
   }
 }
