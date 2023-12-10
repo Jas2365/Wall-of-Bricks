@@ -2,8 +2,9 @@ function randomColor() {
   let r = Math.floor(Math.random() * 250);
   let g = Math.floor(Math.random() * 250);
   let b = Math.floor(Math.random() * 250);
-
-  return `rgb(${r}, ${g}, ${b})`;
+  if (r != 0 && g != 0 && b != 0) {
+    return `rgb(${r}, ${g}, ${b})`;
+  }
 }
 function onMouseClick() {
   document
