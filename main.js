@@ -132,46 +132,22 @@ function switchingColor(
   {
     // see self and around
     if (brickColor != "white") {
-      console.log("see self: " + brickColor);
-      console.log("see id: " + value);
       if (right != "white") {
-        console.log("see right: " + right);
         if (topp != "white") {
-          console.log("see topp: " + topp);
           if (left != "white") {
-            console.log("see left: " + left);
             if (bottom != "white") {
-              console.log("see bottom: " + bottom);
               document.getElementById(value).style.backgroundColor =
                 randomColor();
-              console.log("see id: " + value);
-              console.log("see self: " + brickColor);
-              console.log("see right: " + right);
-              console.log("see topp: " + topp);
-              console.log("see left: " + left);
-              console.log("see bottom: " + bottom);
             } else if (bottom == "border") {
               document.getElementById(value).style.backgroundColor =
                 randomColor();
               document.getElementById(value).classList.add("border");
-              console.log("see id: " + value);
-              console.log("see self: " + brickColor);
-              console.log("see right: " + right);
-              console.log("see topp: " + topp);
-              console.log("see left: " + left);
-              console.log("see bottom: " + bottom);
             } else {
               bottomBrick.style.backgroundColor = randomColor();
               bottomBrick.className = brickColor;
               bottomBrick = brickSelf;
               document.getElementById(value).className = "white";
               document.getElementById(value).style.backgroundColor = "white";
-              console.log("see id: " + value);
-              console.log("see self: " + brickColor);
-              console.log("see right: " + right);
-              console.log("see topp: " + topp);
-              console.log("see left: " + left);
-              console.log("see bottom: " + bottom);
             }
           } else if (left == "border") {
             document.getElementById(value).style.backgroundColor =
