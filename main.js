@@ -1,10 +1,3 @@
-function randomColor() {
-  let r = Math.floor(Math.random() * 250);
-  let g = Math.floor(Math.random() * 250);
-  let b = Math.floor(Math.random() * 250);
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
 // fn to get the values of adjcent bricks
 function getValue(value, brickColor) {
   brickSelf = document.getElementById(value);
@@ -136,45 +129,42 @@ function switchingColor(
         if (topp != "white") {
           if (left != "white") {
             if (bottom != "white") {
-              document.getElementById(value).style.backgroundColor =
-                randomColor();
+              document.getElementById(value).style.backgroundColor = brickColor;
             } else if (bottom == "border") {
-              document.getElementById(value).style.backgroundColor =
-                randomColor();
+              document.getElementById(value).style.backgroundColor = brickColor;
               document.getElementById(value).classList.add("border");
             } else {
-              bottomBrick.style.backgroundColor = randomColor();
+              bottomBrick.style.backgroundColor = brickColor;
               bottomBrick.className = brickColor;
               bottomBrick = brickSelf;
               document.getElementById(value).className = "white";
               document.getElementById(value).style.backgroundColor = "white";
             }
           } else if (left == "border") {
-            document.getElementById(value).style.backgroundColor =
-              randomColor();
+            document.getElementById(value).style.backgroundColor = brickColor;
             document.getElementById(value).classList.add("border");
           } else {
-            leftBrick.style.backgroundColor = randomColor();
+            leftBrick.style.backgroundColor = brickColor;
             leftBrick.className = brickColor;
             leftBrick = brickSelf;
             document.getElementById(value).className = "white";
             document.getElementById(value).style.backgroundColor = "white";
           }
         } else if (topp == "border") {
-          document.getElementById(value).style.backgroundColor = randomColor();
+          document.getElementById(value).style.backgroundColor = brickColor;
           document.getElementById(value).classList.add("border");
         } else {
-          toppBrick.style.backgroundColor = randomColor();
+          toppBrick.style.backgroundColor = brickColor;
           toppBrick.className = brickColor;
           toppBrick = brickSelf;
           document.getElementById(value).className = "white";
           document.getElementById(value).style.backgroundColor = "white";
         }
       } else if (right == "border") {
-        document.getElementById(value).style.backgroundColor = randomColor();
+        document.getElementById(value).style.backgroundColor = brickColor;
         document.getElementById(value).classList.add("border");
       } else {
-        rightBrick.style.backgroundColor = randomColor();
+        rightBrick.style.backgroundColor = brickColor;
         rightBrick.className = brickColor;
         rightBrick = brickSelf;
         document.getElementById(value).className = "white";
@@ -183,6 +173,13 @@ function switchingColor(
     }
   }
 }
+// function randomColor() {
+//   let r = Math.floor(Math.random() * 250);
+//   let g = Math.floor(Math.random() * 250);   // Not needed anymore
+//   let b = Math.floor(Math.random() * 250);
+//   return `rgb(${r}, ${g}, ${b})`;
+// }
+
 // function onMouseClick() {
 //   document
 //     .getElementById("1")

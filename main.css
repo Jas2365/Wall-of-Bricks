@@ -18,42 +18,38 @@ body {
   display: flex;
 }
 
-.brick-1,
-.brick-2,
-.brick-3,
-.brick-4,
-.brick-5,
-.brick-6,
-.brick-7,
-.brick-8,
-.brick-9,
-.brick-10,
-
-.brick-11,
-.brick-12,
-.brick-13,
-.brick-14,
-.brick-15,
-.brick-16,
-.brick-17,
-.brick-18,
-.brick-19,
-.brick-20,
-
-.brick-21,
-.brick-22,
-.brick-23,
-.brick-24,
-.brick-25,
-.brick-26,
-.brick-27,
-.brick-28,
-.brick-29,
-.brick-30 {
+.red {
 
   padding: 0;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.blue {
+
+  padding: 0;
+  border-radius: 10px;
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
+
+.green {
+
+  padding: 0;
+  border-radius: 10px;
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+.yellow {
+
+  padding: 0;
+  border-radius: 10px;
+  background-color: yellow;
   height: 100px;
   width: 100px;
 }
