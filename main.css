@@ -16,12 +16,32 @@ body {
 
 .row {
   display: flex;
+
+}
+
+.red-row {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.green-row {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.blue-row {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.yellow-row {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.white-row {
+  background-color: rgba(245, 245, 245, 0.5);
 }
 
 .red {
-
-  padding: 0;
-  border-radius: 10px;
+  padding: 0px;
+  border-radius: 30px;
   background-color: red;
   height: 100px;
   width: 100px;
@@ -30,7 +50,7 @@ body {
 .blue {
 
   padding: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: blue;
   height: 100px;
   width: 100px;
@@ -39,7 +59,7 @@ body {
 .green {
 
   padding: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: green;
   height: 100px;
   width: 100px;
@@ -48,7 +68,7 @@ body {
 .yellow {
 
   padding: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: yellow;
   height: 100px;
   width: 100px;
@@ -56,7 +76,7 @@ body {
 
 .white {
   padding: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
   height: 100px;
   width: 100px;
