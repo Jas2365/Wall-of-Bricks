@@ -8,4 +8,4 @@ function k(value) {
     }
   }
 }
-k(236);
+k(23);
