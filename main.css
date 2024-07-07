@@ -4,6 +4,8 @@
 
 body {
   background-color: #333;
+  display :flex;
+  justify-content : center;
 }
 
 .container {
@@ -12,8 +14,6 @@ body {
   display: grid;
   height: 250px;
   width: 300px;
-  margin: auto;
-  padding: auto;
 }
 
 .row {
